@@ -32,6 +32,6 @@ public final class Angelcometfishver1 extends JavaPlugin implements Listener {
             p.sendMessage("5以上です");
             p.getInventory().addItem(new ItemStack(Material.DIAMOND));
     }else{
-            p.sendMessage("どんまいｗ");
+            p.sendMessage("5以下です");
         }
 }}
