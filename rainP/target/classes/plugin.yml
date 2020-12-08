@@ -1,0 +1,6 @@
+name: Angelcometfishver1
+version: 1.0-SNAPSHOT
+main: com.angelcometfish.angelcometfishver1.Angelcometfishver1
+api-version: 1.15
+authors: [ rain0417 ]
+description: rainproject
