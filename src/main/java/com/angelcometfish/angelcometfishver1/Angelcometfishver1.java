@@ -36,14 +36,14 @@ public final class Angelcometfishver1 extends JavaPlugin implements Listener {
         if (1 == num) {
             ItemStack myitem = new ItemStack(Material.DIAMOND);
             String dispname = w+"の心";
-            List lores = new ArrayList();
-            lores.add(w+"の心");
-            lores.add("めっちゃレア");
+            List<String> loress = new ArrayList<>();
+            loress.add(w+"の心");
+            loress.add("めっちゃレア");
             myitem.addUnsafeEnchantment(Enchantment.DAMAGE_ALL, 1);
             ItemMeta im = myitem.getItemMeta();
             assert im != null;
             im.setDisplayName(dispname);
-            im.setLore(lores);
+            im.setLore(loress);
             myitem.setItemMeta(im);
             p.sendMessage(w + "の心をドロップしました");
             p.getInventory().addItem(myitem);
