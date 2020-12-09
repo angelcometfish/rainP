@@ -34,20 +34,20 @@ public final class Angelcometfishver1 extends JavaPlugin implements Listener {
         String w = e.getEntity().getName();
         assert p != null;
         if (1 == num) {
-                p.sendMessage("特に何もないよ");
+            ItemStack myitem = new ItemStack(Material.DIAMOND);
+            String dispname = w+"の心";
+            List lores = new ArrayList();
+            lores.add(w+"の心");
+            lores.add("めっちゃレア");
+            myitem.addUnsafeEnchantment(Enchantment.DAMAGE_ALL, 1);
+            ItemMeta im = myitem.getItemMeta();
+            assert im != null;
+            im.setDisplayName(dispname);
+            im.setLore(lores);
+            myitem.setItemMeta(im);
+            p.sendMessage(w + "の心をドロップしました");
+            p.getInventory().addItem(myitem);
             } else {
-                ItemStack myitem = new ItemStack(Material.DIAMOND);
-                String dispname = w+"の心";
-                List lores = new ArrayList();
-                lores.add(w+"の心");
-                lores.add("めっちゃレア");
-                myitem.addUnsafeEnchantment(Enchantment.DAMAGE_ALL, 1);
-                ItemMeta im = myitem.getItemMeta();
-                assert im != null;
-                im.setDisplayName(dispname);
-                im.setLore(lores);
-                myitem.setItemMeta(im);
-                p.sendMessage(w + "の心をドロップしました");
-                p.getInventory().addItem(myitem);
+                 p.sendMessage("特に何もないよ");
         }
     }}
