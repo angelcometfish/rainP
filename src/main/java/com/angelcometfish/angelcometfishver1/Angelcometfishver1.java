@@ -51,4 +51,6 @@ public final class Angelcometfishver1 extends JavaPlugin implements Listener {
         } else {
             p.sendMessage("特に何もないよ");
         }
-    }}
+    }
+}
+
