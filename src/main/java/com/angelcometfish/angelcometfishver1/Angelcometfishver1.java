@@ -26,6 +26,7 @@ public final class Angelcometfishver1 extends JavaPlugin implements Listener {
     public void onDisable() {
         // Plugin shutdown logic
     }
+
     @EventHandler
     public void onKill(EntityDeathEvent e){
         Random rand = new Random();
@@ -47,7 +48,7 @@ public final class Angelcometfishver1 extends JavaPlugin implements Listener {
             myitem.setItemMeta(im);
             p.sendMessage(w + "の心をドロップしました");
             p.getInventory().addItem(myitem);
-            } else {
-                 p.sendMessage("特に何もないよ");
+        } else {
+            p.sendMessage("特に何もないよ");
         }
     }}
